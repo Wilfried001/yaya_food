@@ -4,10 +4,7 @@ import 'package:yaya_food/config/function.dart';
 
 class SplashWidget extends StatelessWidget {
   const SplashWidget(
-      {super.key,
-      this.time = 200,
-      required this.child,
-      required this.nextPage});
+      {super.key, this.time = 2, required this.child, required this.nextPage});
   final int time;
   final Widget child, nextPage;
 

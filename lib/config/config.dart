@@ -23,4 +23,7 @@ class _Asset {
   final logo = "assets/images/logo.png";
   final logo2 = "assets/images/logo_officuel.png";
   final backgrougImage = "assets/images/background.jpg";
+  final imageSlide1 = "assets/images/Chef.png";
+  final imageSlide2 = "assets/images/undraw_online_groceries_a02y.png";
+  final pokawa = "assets/images/pokawa.png";
 }

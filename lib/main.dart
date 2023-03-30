@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:yaya_food/views/SplashScreen.dart';
-import 'package:yaya_food/views/first_page.dart';
+import 'package:yaya_food/views/first-page.dart';
 import 'package:yaya_food/widgets/splash.dart';
 
 void main() {

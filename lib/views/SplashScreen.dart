@@ -36,8 +36,8 @@ class SplashScreen extends StatelessWidget {
                     height: 10,
                   ),
                   Container(
-                    height: 300,
-                    width: 300,
+                    height: 250,
+                    width: 250,
                     decoration: BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage(Config.asset.logo),
@@ -47,8 +47,8 @@ class SplashScreen extends StatelessWidget {
                   Text(
                     'changement...',
                     style: TextStyle(
-                        color: Config.colors.flouTextColor,
-                        fontSize: 18,
+                        color: Config.colors.primaryColor,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold),
                   ),
                 ],
