@@ -15,20 +15,37 @@ class Slide {
 final slideList = [
   Slide(
     imageUrl: Config.asset.imageSlide1,
-    title: 'A Cool Way to Get Start',
+    title: 'Un petit creux ?',
     description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus tincidunt bibendum. Maecenas eu viverra orci. Duis diam leo, porta at justo vitae, euismod aliquam nulla.',
+        'Yaya vous livre votre repas directement dans votre bar préféré',
   ),
   Slide(
     imageUrl: Config.asset.imageSlide2,
-    title: 'Design Interactive App UI',
+    title: 'Scanner le QR code',
     description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus tincidunt bibendum. Maecenas eu viverra orci. Duis diam leo, porta at justo vitae, euismod aliquam nulla.',
+        'Utiliser votre smartphone pour flasher le QR code sur votre table et découvrez la liste des restaurants sélectionnés par l\'établissement où vous êtes.',
   ),
   Slide(
     imageUrl: Config.asset.imageSlide1,
-    title: 'It\'s Just the Beginning',
+    title: 'Choississez votre repas',
     description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus tincidunt bibendum. Maecenas eu viverra orci. Duis diam leo, porta at justo vitae, euismod aliquam nulla.',
+        'Découvrez les menus de chaque restaurant et faites votre sélection.',
+  ),
+  Slide(
+    imageUrl: Config.asset.imageSlide1,
+    title: 'Paiement simplifié ',
+    description:
+        'Réglé directement avec votre application, partagez la note avec vos convives ou grand prince régalez tout le monde !',
+  ),
+  Slide(
+    imageUrl: Config.asset.imageSlide1,
+    title: 'Choississez votre repas',
+    description:
+        'Découvrez les menus de chaque restaurant et faites votre sélection.',
+  ),
+  Slide(
+    imageUrl: Config.asset.imageSlide1,
+    title: ' Recommandez une tournée',
+    description: 'Votre repas est bientôt servi !',
   ),
 ];

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:yaya_food/config/config.dart';
 import 'package:yaya_food/models/slide.dart';
 
@@ -15,12 +14,12 @@ class SlideItem extends StatelessWidget {
       children: [
         Image.asset(slideList[index].imageUrl),
         SizedBox(
-          height: 40,
+          height: 20,
         ),
         Text(
           slideList[index].title,
           style: TextStyle(
-              fontSize: 22,
+              fontSize: 18,
               color: Config.colors.textColor,
               fontWeight: FontWeight.w700),
         ),

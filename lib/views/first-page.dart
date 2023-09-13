@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:yaya_food/config/function.dart';
 import 'package:yaya_food/models/slide.dart';
-import 'package:yaya_food/views/PartenaireListe.dart';
+import 'package:yaya_food/views/partenaire/PartenaireListe.dart';
 import 'package:yaya_food/widgets/button.dart';
 import 'package:yaya_food/widgets/slide_dote.dart';
 import 'package:yaya_food/widgets/slide_idem.dart';
@@ -55,61 +55,55 @@ class _FirstPageState extends State<FirstPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: Colors.white,
-        child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            children: [
-              Expanded(
-                child: Stack(
-                  alignment: AlignmentDirectional.bottomCenter,
-                  children: [
-                    PageView.builder(
-                      scrollDirection: Axis.horizontal,
-                      controller: _pageController,
-                      onPageChanged: _onPageChanged,
-                      itemCount: slideList.length,
-                      itemBuilder: (ctx, i) => SlideItem(i),
-                    ),
-                    Stack(
-                      alignment: AlignmentDirectional.topStart,
-                      children: [
-                        Container(
-                          margin: const EdgeInsets.only(bottom: 35),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              for (int i = 0; i < slideList.length; i++)
-                                if (i == _currentPage)
-                                  SlideDots(true)
-                                else
-                                  SlideDots(false)
-                            ],
-                          ),
-                        )
-                      ],
+      body: Padding(
+        padding: const EdgeInsets.all(5.0),
+        child: ListView(
+          children: [
+            Column(
+              children: [
+                Container(
+                  height: height(context) * 0.8,
+                  child: Stack(
+                    alignment: AlignmentDirectional.bottomCenter,
+                    children: [
+                      PageView.builder(
+                        scrollDirection: Axis.horizontal,
+                        controller: _pageController,
+                        onPageChanged: _onPageChanged,
+                        itemCount: slideList.length,
+                        itemBuilder: (ctx, i) => SlideItem(i),
+                      ),
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          for (int i = 0; i < slideList.length; i++)
+                            if (i == _currentPage)
+                              SlideDots(true)
+                            else
+                              SlideDots(false)
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 45,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    CButton(
+                      title: "Commencer",
+                      onPressed: () {
+                        scanQRCode();
+                      },
                     )
                   ],
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: <Widget>[
-                  CButton(
-                    title: "Commencer",
-                    onPressed: () {
-                      scanQRCode();
-                    },
-                  )
-                ],
-              )
-            ],
-          ),
+                )
+              ],
+            ),
+          ],
         ),
       ),
     );

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yaya_food/config/config.dart';
 import 'package:yaya_food/config/function.dart';
-import 'package:yaya_food/widgets/textField.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

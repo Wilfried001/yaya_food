@@ -26,4 +26,6 @@ class _Asset {
   final imageSlide1 = "assets/images/Chef.png";
   final imageSlide2 = "assets/images/undraw_online_groceries_a02y.png";
   final pokawa = "assets/images/pokawa.png";
+  final image = "assets/images/image.png";
+  final cesar = "assets/images/cesar.png";
 }
